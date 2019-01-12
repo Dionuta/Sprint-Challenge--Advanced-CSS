@@ -6,3 +6,17 @@
     justify-content: @justify-content;
     align-items: @align-items;
   }
+
+  .buttonstyle(@radius; @width){  // 2 parameters button 
+    background: black;
+    border-radius: @radius;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+    width: @width;
+    &:hover{
+    background: red; // hover 
+    }
+  }

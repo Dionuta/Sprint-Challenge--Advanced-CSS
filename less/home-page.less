@@ -1,7 +1,7 @@
 // Home Content
 
 .home {
-  
+
   .intro {
 
     h2 {
@@ -47,8 +47,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex(center, none); //mixin used
 
     .walk-text {
       width: 50%;
@@ -61,7 +60,8 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn{
+        .buttonstyle(1rem, 10rem); //mixin used
       }
     }
 
