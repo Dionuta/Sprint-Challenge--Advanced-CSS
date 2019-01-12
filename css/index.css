@@ -195,6 +195,7 @@ footer {
 }
 .home .main-header {
   border-radius: 1rem;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
