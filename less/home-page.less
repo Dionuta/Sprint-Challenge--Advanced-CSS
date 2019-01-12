@@ -27,7 +27,22 @@
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%;
+      height: 100%;    
+    }
+    .sky {
+      @media @mobile {
+        display: none; //img hide on mobile
+      }
+    }
+    .launch {
+      @media @mobile {
+        display: none; //img hide on mobile
+      }
+    }
+    .blast{
+      @media @mobile { //mobile
+        width:92%; 
+      }
     }
   }
 
@@ -48,9 +63,19 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     .flex(center, none); //mixin used
+    @media @mobile{  //mobile 
+      .flex(center, center);
+      flex-direction: column-reverse; 
+      position: relative;
+      right: 1.1rem;
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile{
+        width: 124%; //over good fit on screen 
+        padding-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -62,12 +87,19 @@
 
       .btn{
         .buttonstyle(1rem, 10rem); //mixin used
+        @media @mobile{
+          .buttonstyle(1rem, 36rem);
+          height: 6rem; //adds heigth button on mobile
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        width: 126%;
+      }
       
       img {
         width: 100%;
