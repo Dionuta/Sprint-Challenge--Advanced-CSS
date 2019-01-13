@@ -249,8 +249,6 @@ footer {
   /* Add styles to the form container */
   /* Full-width input fields */
   /* When the inputs get focus, do something */
-  /* Set a style for the submit/login button */
-  /* Add a red background color to the cancel button */
   /* Add some hover effects to buttons */
 }
 @media (max-width: 500px) {
@@ -320,6 +318,21 @@ footer {
   padding: 10px;
   background-color: white;
 }
+.home .walk .form-container .btn {
+  /* Set a style for the submit/login button */
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.home .walk .form-container .cancel {
+  /* Add a red background color to the cancel button */
+  background-color: red;
+}
 .home .walk .form-container input[type=text],
 .home .walk .form-container input[type=password] {
   width: 100%;
@@ -332,19 +345,6 @@ footer {
 .home .walk .form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
-}
-.home .walk .form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.8;
-}
-.home .walk .form-container .cancel {
-  background-color: red;
 }
 .home .walk .form-container .btn:hover,
 .home .walk .open-button:hover {
