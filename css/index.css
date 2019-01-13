@@ -245,6 +245,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: none;
+  /* The popup form - hidden by default */
+  /* Add styles to the form container */
+  /* Full-width input fields */
+  /* When the inputs get focus, do something */
+  /* Set a style for the submit/login button */
+  /* Add a red background color to the cancel button */
+  /* Add some hover effects to buttons */
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -299,6 +306,49 @@ footer {
   .home .walk .walk-text .btn:hover {
     background: red;
   }
+}
+.home .walk .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.home .walk .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.home .walk .form-container input[type=text],
+.home .walk .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.home .walk .form-container input[type=text]:focus,
+.home .walk .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.home .walk .form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.home .walk .form-container .cancel {
+  background-color: red;
+}
+.home .walk .form-container .btn:hover,
+.home .walk .open-button:hover {
+  opacity: 1;
 }
 .home .walk .walk-img {
   width: 46%;
