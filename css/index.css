@@ -176,7 +176,6 @@ p {
   text-decoration: none;
   font-size: 1.4rem;
   color: black;
-  background: red;
 }
 @media (max-width: 500px) {
   .space-nav a {
@@ -388,7 +387,6 @@ header h2 {
 header a,
 a:visited {
   text-decoration: none;
-  color: #fcfcfc;
 }
 @keyframes move-twink-back {
   from {
