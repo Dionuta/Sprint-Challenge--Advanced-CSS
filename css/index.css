@@ -462,3 +462,10 @@ footer {
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite;
 }
+.about .clouds h1,
+.about .clouds h2,
+.about .clouds p {
+  color: #FDCD00;
+  text-align: center;
+  padding-bottom: 1rem;
+}
